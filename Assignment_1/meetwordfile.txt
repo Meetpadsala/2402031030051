@@ -1,0 +1,37 @@
+Steps for Git & Github
+Step 1: Setup Git & SSH Key
+1. Open Git Bash and check if Git is installed:
+a. git --version
+2. Configure Git (if not already configured):
+a. git config --global user.name "2402031030051"
+b. git config --global user.email "2402031030051@silveroakuni.ac.in"
+3. Generate an SSH key:
+a. ssh-keygen -t ed25519 -C "2402031030051@silveroakuni.ac.in"
+4. Copy the SSH key to the clipboard:
+a. cat ~/.ssh/id_ed25519.pub
+5. Go to GitHub ? Settings ? SSH and GPG keys ? New SSH Key
+6. Paste the key and click Add SSH Key.
+Step 2: Create & Clone Git Repository
+1. Go to GitHub ? Create New Repository
+2. Name it your enrollment number
+3. Select Public/Private ? Create Repository
+4. Clone using SSH:
+a. git clone https://github.com Meetpadsala
+/2402031030051.git
+5. Move into the repository:
+a. cd 2402031030051
+Step 3: Create Required Folders & Add Assignments
+1. Create two folders:
+a. mkdir Assignment_1 Assignment_2
+2. Copy assignment files into respective folders.
+3. Verify files:
+a. ls
+Step 4: Commit & Push to GitHub
+1. Check Git status:
+a. git status
+2. Add files to staging:
+a. git add .
+3. Commit the changes:
+a. git commit -m "first commit"
+4. Push to GitHub:
+a. git push origin main.
